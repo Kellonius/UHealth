@@ -1,0 +1,6 @@
+  <mat-card class="facility-list__card-container">Facilities
+    <mat-divider></mat-divider>
+    <mat-list *ngFor="let f of facs; let i = index">
+      <a (click)="openDialog(f.FacilityKey, f.TypeSkey)">{{f.FacilityName}}</a>
+    </mat-list>
+  </mat-card>

@@ -1,0 +1,34 @@
+<mat-card class="filter__card-container">
+  <span>Filter Search</span>
+  <mat-divider [inset]="true"></mat-divider>
+  Facility Type
+  <mat-select (change)="mat-selectFacility()" [(ngModel)]="facilityTypemat-selectModel">
+    <option *ngFor="let f of facType">{{f.FacilityType}}</option>
+  </mat-select>
+  <br />
+  <mat-divider [inset]="true"></mat-divider>
+  Insurance
+  <mat-select (change)="mat-selectInsurance()" ng-model="mat-selectedInsurance" [(ngModel)]="insurancemat-selectModel">
+    <option *ngFor="let i of ins">{{i.InsuranceName}}</option>
+  </mat-select>
+  <br />
+  <mat-divider [inset]="true"></mat-divider>
+  Procedure
+  <mat-select (change)="mat-selectProcedure()" ng-model="mat-selectedProcedure" [(ngModel)]="proceduremat-selectModel">
+    <option *ngFor="let p of proc">{{p.Description}}</option>
+  </mat-select>
+  <br />
+  <mat-divider [inset]="true"></mat-divider>
+  Specialty
+  <mat-select (change)="mat-selectSpecialty()" ng-model="mat-selectedSpecialty" [(ngModel)]="specialtymat-selectModel">
+    <option *ngFor="let s of spec">{{s.Description}}</option>
+  </mat-select>
+  <br *ngIf="isSpecmat-selected" />
+  <mat-select *ngIf="isSpecmat-selected" ng-model="mat-selectedPhysician">
+    <option *ngFor="let ph of phys">Dr. {{ph.LastName}}, {{ph.FirstName}}</option>
+  </mat-select>
+  <br />
+  <mat-divider [inset]="true"></mat-divider>
+  <span>Range(Miles)</span>
+  <mat-slider style="width:100%" thumbLabel min="1" max="100" step="1" value="1.5"></mat-slider>
+</mat-card>
