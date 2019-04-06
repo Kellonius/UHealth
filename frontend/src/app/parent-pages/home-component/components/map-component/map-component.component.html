@@ -1,7 +1,7 @@
 <mat-card>
-    <agm-map [latitude]="lat" [longitude]="lng" [usePanning]="true" [zoom]="zoom" [disableDefaultUI]="false"
+    <agm-map [latitude]="getLatitude()" [longitude]="getLongitude()" [usePanning]="true" [zoom]="zoom" [disableDefaultUI]="false"
       [zoomControl]="false" (mapClick)="mapClicked($event)" (mapReady)="mapReady($event)">
-      <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)" [latitude]="m.lat" [longitude]="m.lng"
+      <agm-marker *ngFor="let m of getMarkers(); let i = index" (markerClick)="clickedMarker(m.label, i)" [latitude]="m.lat" [longitude]="m.lng"
         [label]="m.label" [markerDraggable]="m.draggable" (dragEnd)="markerDragEnd(m, $event)">
         <agm-info-window>
           <strong>{{m.info}}</strong>

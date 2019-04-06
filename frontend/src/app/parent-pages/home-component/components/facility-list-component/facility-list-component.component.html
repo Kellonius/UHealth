@@ -1,6 +1,20 @@
-  <mat-card class="facility-list__card-container">Facilities
-    <mat-divider></mat-divider>
-    <mat-list *ngFor="let f of facs; let i = index">
-      <a (click)="openDialog(f.FacilityKey, f.TypeSkey)">{{f.FacilityName}}</a>
-    </mat-list>
+  <mat-card class="facility-list__card-container">
+    <div style="display:flex; flex-direction: column; width:100%">
+      <ul class="collection with-header" style="width:100%; height:90%;">
+        <li class="collection-header">
+          <h3 class="center-align">Facilities</h3>
+        </li>
+        <li *ngFor="let f of getFacilities(); let i = index" class="collection-item left-align">
+          <a class="title" (click)="openDialog(f.FacilityKey, f.TypeSkey)"> {{sharedService.getLetter(i)}}: {{f.FacilityName}}</a>
+          <a href="#!" class="secondary-content"><i class="material-icons facility-list__view-button"
+              matTooltip="View Details" matTooltipPosition="below">exit_to_app</i></a>
+          <a href="#!" *ngIf="!f.Selected" class="secondary-content" (click)="selectFacility(f, i)"><i
+              class="material-icons-outlined" matTooltip="Select" matTooltipPosition="below">grade</i></a>
+          <a href="#!" *ngIf="f.Selected" class="secondary-content" (click)="selectFacility(f, i)"><i
+              class="material-icons" matTooltip="Select" matTooltipPosition="below">grade</i></a>
+        </li>
+      </ul>
+      <a class="waves-effect waves-light btn facility-list__compare-button"
+        [ngClass]="{'disabled': getSelectCount()}">Compare</a>
+    </div>
   </mat-card>

@@ -1,4 +1,34 @@
 .facility-list__card-container {
-    display: flex;
-    width:100%;
+  display: flex;
+  width: 100%;
+  margin: 10px 10px 0 10px;
+}
+
+.facility-list__view-button {
+  color:#7F5EBA !important;
+  background-color: white !important;
+  padding-left:10px;
+}
+
+.facility-list__compare-button {
+  color: white !important;
+}
+
+a {
+  font-size: 16px;
+  color: #FF4E00 !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+i {
+  font-size: 24px;
+  color:#01ADAB;
+}
+
+li {
+  line-height: 20px;
+  vertical-align: middle;
 }
