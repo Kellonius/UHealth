@@ -12,8 +12,11 @@ const routes: Routes = [{
   component: HomeComponent
 },
 {
-  path: 'facility',
-  component: DetailsComponent
+  path: 'facility/:FacilitySkey',
+  component: DetailsComponent,
+  data: {
+    breadcrumb: "Facility Details"
+  }
 },
 ];
 

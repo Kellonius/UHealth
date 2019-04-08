@@ -6,11 +6,11 @@
         </li>
         <li *ngFor="let f of getFacilities(); let i = index" class="collection-item left-align">
           <a class="title" (click)="openDialog(f.FacilityKey, f.TypeSkey)"> {{sharedService.getLetter(i)}}: {{f.FacilityName}}</a>
-          <a href="#!" class="secondary-content"><i class="material-icons facility-list__view-button"
-              matTooltip="View Details" matTooltipPosition="below">exit_to_app</i></a>
-          <a href="#!" *ngIf="!f.Selected" class="secondary-content" (click)="selectFacility(f, i)"><i
+          <a class="secondary-content"><i class="material-icons facility-list__view-button"
+              matTooltip="View Details" matTooltipPosition="below" [routerLink]="['/facility', f.FacilityKey]">exit_to_app</i></a>
+          <a *ngIf="!f.Selected" class="secondary-content" (click)="selectFacility(f, i)"><i
               class="material-icons-outlined" matTooltip="Select" matTooltipPosition="below">grade</i></a>
-          <a href="#!" *ngIf="f.Selected" class="secondary-content" (click)="selectFacility(f, i)"><i
+          <a *ngIf="f.Selected" class="secondary-content" (click)="selectFacility(f, i)"><i
               class="material-icons" matTooltip="Select" matTooltipPosition="below">grade</i></a>
         </li>
       </ul>

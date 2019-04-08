@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Facility } from '../Models/facility';
 
 @Injectable()
-export class FacilityService{
+export class FacilityService {
     
     facilities: Facility[] = [{
         FacilityKey: 1,

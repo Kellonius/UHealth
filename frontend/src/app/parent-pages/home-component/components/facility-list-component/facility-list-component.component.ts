@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FacilityService } from 'src/app/Services/facility.service';
 import { Facility } from 'src/app/Models/facility';
 import { SharedService } from 'src/app/Services/shared.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-facility-list-component',
@@ -10,7 +11,7 @@ import { SharedService } from 'src/app/Services/shared.service';
 })
 export class FacilityListComponentComponent implements OnInit {
 
-  constructor(public facilityService: FacilityService, public sharedService: SharedService) { }
+  constructor(public facilityService: FacilityService, public sharedService: SharedService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -30,6 +31,5 @@ export class FacilityListComponentComponent implements OnInit {
       return true;
     }
   }
-
 
 }

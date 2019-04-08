@@ -1,3 +1,51 @@
-<p>
-  details-component works!
-</p>
+<div *ngIf="showError">No facility exists with the selected key: {{routeParams.FacilitySkey}}</div>
+<div class="details-component__container" *ngIf="!showError">
+  <mat-card>
+    <h4>General Information</h4>
+    <div><span class="details-component__label-header">Facility Name: </span> <span>{{facility.FacilityName}}</span></div>
+    <div><span class="details-component__label-header">Address: </span> <span>{{facility.Address}}</span></div>
+    <div><span class="details-component__label-header">City: </span> <span>{{facility.City}}</span>
+      <span class="details-component__label-header"> State: </span> <span>{{facility.State}}</span>
+      <span class="details-component__label-header"> County: </span> <span>{{facility.County}}</span>
+      <span class="details-component__label-header"> Zip Code: </span> <span>{{facility.Zipcode}}</span>
+    </div>
+  </mat-card>
+  <mat-card class="details-component__card-height">
+    <h4>Procedure Information</h4>
+    <table class="striped">
+      <thead>
+        <tr>
+          <th *ngFor="let header of tableHeaders">{{header}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stat of getProcedureStatistics()">
+          <td>{{stat.ProcedureDescr}}</td>
+          <td>{{stat.AvgTotalCost | currency}}</td>
+          <td>{{stat.AvgLos}} Days</td>
+          <td>{{stat.MortalityRate}}%</td>
+          <td>{{stat.MajorComplicationRate}}%</td>
+          <td>{{stat.MinorComplicationRate}}%</td>
+          <td>{{stat.ReadmissionRate}}%</td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card>
+  <mat-card class="details-component__card-height">
+    <h4>Physician Information</h4>
+    <table class="striped responsive-table">
+      <thead>
+        <tr>
+          <th *ngFor="let header of physicianHeaders">{{header}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of getPhysicians()">
+          <td>Dr. {{p.LastName}}, {{p.FirstName}}</td>
+          <td>{{p.Specialty}}</td>
+          <td>{{p.npi}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card>
+</div>

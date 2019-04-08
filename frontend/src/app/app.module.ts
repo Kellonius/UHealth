@@ -19,6 +19,8 @@ import { DetailsComponent } from './parent-pages/details-component/details-compo
 import { LocationService } from './Services/location.service';
 import { FacilityService } from './Services/facility.service';
 import { SharedService } from './Services/shared.service';
+import { ProcedureStatisticsService } from './Services/procedure-statistics.service';
+import { PhysiciansService } from './Services/physician.service';
 
 @NgModule({
   declarations: [
@@ -50,8 +52,10 @@ import { SharedService } from './Services/shared.service';
     }),
   ],
   providers: [
-    LocationService,
     FacilityService,
+    LocationService,
+    PhysiciansService,
+    ProcedureStatisticsService,
     SharedService
   ],
   bootstrap: [AppComponent]
