@@ -3,7 +3,8 @@ import { Facility } from '../Models/facility';
 
 @Injectable()
 export class FacilityService {
-    
+
+    selectedFacilities: Facility[] = []
     facilities: Facility[] = [{
         FacilityKey: 1,
         FacilityName: "Saint Francis",
@@ -30,12 +31,18 @@ export class FacilityService {
         Longitude: -89.669305,
         Selected: false
     }]
-    
-    constructor(){
+
+    constructor() {
 
     }
 
     selectFacility(facility: Facility, index: number) {
+        if (!this.facilities[index].Selected) {
+            this.selectedFacilities.push(this.facilities[index]);
+        } else {
+            this.selectedFacilities.splice(this.selectedFacilities.indexOf(this.facilities[index]));
+        }
+        console.log(this.selectedFacilities)
         this.facilities[index].Selected = !this.facilities[index].Selected;
     }
 

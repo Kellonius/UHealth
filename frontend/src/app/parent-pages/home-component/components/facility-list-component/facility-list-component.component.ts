@@ -32,4 +32,8 @@ export class FacilityListComponentComponent implements OnInit {
     }
   }
 
+  navigateComparison() {
+    this.router.navigate(["/compare"])
+  }
+
 }

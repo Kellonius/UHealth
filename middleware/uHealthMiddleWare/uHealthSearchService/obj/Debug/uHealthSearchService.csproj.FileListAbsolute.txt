@@ -1,0 +1,171 @@
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\uHealthSearchService.dll.config
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\uHealthSearchService.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\uHealthSearchService.pdb
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csc.exe
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csc.exe.config
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csc.rsp
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csi.exe
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csi.exe.config
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csi.rsp
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.AppContext.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Console.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.Compression.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.Pipes.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Claims.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.ValueTuple.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Xml.XPath.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\vbc.exe
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\vbc.exe.config
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\vbc.rsp
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\VBCSCompiler.exe
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\Antlr3.Runtime.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\Newtonsoft.Json.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Net.Http.Formatting.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Helpers.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.WebHost.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Mvc.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Optimization.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Razor.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.Razor.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\WebGrease.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\Newtonsoft.Json.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Net.Http.Formatting.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Helpers.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.WebHost.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Mvc.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Optimization.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Razor.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.Razor.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\Antlr3.Runtime.pdb
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.csprojAssemblyReference.cache
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.csproj.CoreCompileInputs.cache
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.csproj.CopyComplete
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.pdb
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\uHealthSearchService.dll.config
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\uHealthSearchService.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\uHealthSearchService.pdb
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csc.exe
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csc.exe.config
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csc.rsp
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csi.exe
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csi.exe.config
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\csi.rsp
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.AppContext.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Console.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.Compression.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.IO.Pipes.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Claims.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.ValueTuple.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Xml.XPath.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\vbc.exe
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\vbc.exe.config
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\vbc.rsp
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\VBCSCompiler.exe
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\Antlr3.Runtime.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\EntityFramework.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\EntityFramework.SqlServer.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\Newtonsoft.Json.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Net.Http.Formatting.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Helpers.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.WebHost.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Mvc.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Optimization.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Razor.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.Razor.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\uHealthDataAccess.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\WebGrease.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\uHealthDataAccess.pdb
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\uHealthDataAccess.dll.config
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\EntityFramework.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\EntityFramework.SqlServer.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\Newtonsoft.Json.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Net.Http.Formatting.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Helpers.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.WebHost.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Mvc.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Optimization.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Razor.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.WebPages.Razor.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\Antlr3.Runtime.pdb
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.csprojAssemblyReference.cache
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.csproj.CoreCompileInputs.cache
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.csproj.CopyComplete
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.pdb

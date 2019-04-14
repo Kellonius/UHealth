@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
 import { ProcedureStatistics } from '../Models/procedure-statistics';
+import { Procedure } from '../Models/procedure';
+import { ApplicationService } from './app-service';
 
 @Injectable()
 export class ProcedureStatisticsService {
+
+    public procedureTypesList: Procedure[] = [];
 
     statistics: ProcedureStatistics[] = [{
         ProcedureDescr: "Heart Transplant",
@@ -60,8 +64,12 @@ export class ProcedureStatisticsService {
     }
 ]
 
-    constructor() {
+    constructor(private appService: ApplicationService) {
 
+    }
+
+    getProcedureTypes() {
+        this.appService.getProcedureTypes().subscribe(x => this.procedureTypesList = x);
     }
 
 }

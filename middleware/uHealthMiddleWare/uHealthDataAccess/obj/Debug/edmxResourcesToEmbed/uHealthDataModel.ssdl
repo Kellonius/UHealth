@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BeasleySemesterProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="facility_dimensions">
+    <Key>
+      <PropertyRef Name="facility_skey" />
+    </Key>
+    <Property Name="facility_skey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="facility_name" Type="varchar" MaxLength="100" />
+    <Property Name="address" Type="varchar" MaxLength="100" />
+    <Property Name="city" Type="varchar" MaxLength="30" />
+    <Property Name="state" Type="varchar" MaxLength="2" />
+    <Property Name="zip" Type="varchar" MaxLength="50" />
+    <Property Name="county" Type="varchar" MaxLength="50" />
+    <Property Name="facility_type_skey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="facility_physician_procedures_bridge">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="facility_skey" Type="int" />
+    <Property Name="npi" Type="int" />
+    <Property Name="procedure_code" Type="varchar" MaxLength="7" />
+  </EntityType>
+  <EntityType Name="facility_type_dimensions">
+    <Key>
+      <PropertyRef Name="facility_type_skey" />
+    </Key>
+    <Property Name="facility_type_skey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="facility_type" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="insurance_dimensions">
+    <Key>
+      <PropertyRef Name="insurance_skey" />
+    </Key>
+    <Property Name="insurance_skey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="insurance_type" Type="varchar" MaxLength="50" />
+    <Property Name="insurance_name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="patient_dimensions">
+    <Key>
+      <PropertyRef Name="patient_skey" />
+    </Key>
+    <Property Name="patient_skey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="physician_dimensions">
+    <Key>
+      <PropertyRef Name="npi" />
+    </Key>
+    <Property Name="npi" Type="int" Nullable="false" />
+    <Property Name="first_name" Type="varchar" MaxLength="15" />
+    <Property Name="last_name" Type="varchar" MaxLength="35" />
+    <Property Name="specialty_skey" Type="int" />
+  </EntityType>
+  <EntityType Name="physician_insurance_bridge">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="npi" Type="int" />
+    <Property Name="insurance_skey" Type="int" />
+  </EntityType>
+  <EntityType Name="procedure_base">
+    <Key>
+      <PropertyRef Name="procedure_code" />
+    </Key>
+    <Property Name="procedure_code" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="cost" Type="money" />
+    <Property Name="length_of_stay" Type="int" />
+  </EntityType>
+  <EntityType Name="procedure_code_dimensions">
+    <Key>
+      <PropertyRef Name="procedure_code" />
+    </Key>
+    <Property Name="procedure_code" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="procedure_facility_bridge">
+    <Key>
+      <PropertyRef Name="procedure_skey" />
+    </Key>
+    <Property Name="procedure_skey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="procedure_code" Type="varchar" MaxLength="7" />
+    <Property Name="patient_skey" Type="int" />
+    <Property Name="facility_skey" Type="int" />
+    <Property Name="npi" Type="int" />
+    <Property Name="procedure_date" Type="date" />
+    <Property Name="total_cost" Type="money" />
+    <Property Name="length_of_stay" Type="int" />
+    <Property Name="expired" Type="bit" />
+    <Property Name="major_complications" Type="bit" />
+    <Property Name="minor_complications" Type="bit" />
+    <Property Name="readmit" Type="bit" />
+  </EntityType>
+  <EntityType Name="specialty_dimensions">
+    <Key>
+      <PropertyRef Name="specialty_skey" />
+    </Key>
+    <Property Name="specialty_skey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK__facility___facil__4AB81AF0">
+    <End Role="facility_type_dimensions" Type="Self.facility_type_dimensions" Multiplicity="1" />
+    <End Role="facility_dimensions" Type="Self.facility_dimensions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="facility_type_dimensions">
+        <PropertyRef Name="facility_type_skey" />
+      </Principal>
+      <Dependent Role="facility_dimensions">
+        <PropertyRef Name="facility_type_skey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__facility___facil__4D94879B">
+    <End Role="facility_dimensions" Type="Self.facility_dimensions" Multiplicity="0..1" />
+    <End Role="facility_physician_procedures_bridge" Type="Self.facility_physician_procedures_bridge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="facility_dimensions">
+        <PropertyRef Name="facility_skey" />
+      </Principal>
+      <Dependent Role="facility_physician_procedures_bridge">
+        <PropertyRef Name="facility_skey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__facility___proce__4F7CD00D">
+    <End Role="procedure_base" Type="Self.procedure_base" Multiplicity="0..1" />
+    <End Role="facility_physician_procedures_bridge" Type="Self.facility_physician_procedures_bridge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="procedure_base">
+        <PropertyRef Name="procedure_code" />
+      </Principal>
+      <Dependent Role="facility_physician_procedures_bridge">
+        <PropertyRef Name="procedure_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__facility_ph__npi__4E88ABD4">
+    <End Role="physician_dimensions" Type="Self.physician_dimensions" Multiplicity="0..1" />
+    <End Role="facility_physician_procedures_bridge" Type="Self.facility_physician_procedures_bridge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="physician_dimensions">
+        <PropertyRef Name="npi" />
+      </Principal>
+      <Dependent Role="facility_physician_procedures_bridge">
+        <PropertyRef Name="npi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__physician__insur__5441852A">
+    <End Role="insurance_dimensions" Type="Self.insurance_dimensions" Multiplicity="0..1" />
+    <End Role="physician_insurance_bridge" Type="Self.physician_insurance_bridge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="insurance_dimensions">
+        <PropertyRef Name="insurance_skey" />
+      </Principal>
+      <Dependent Role="physician_insurance_bridge">
+        <PropertyRef Name="insurance_skey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__physician__speci__4CA06362">
+    <End Role="specialty_dimensions" Type="Self.specialty_dimensions" Multiplicity="0..1" />
+    <End Role="physician_dimensions" Type="Self.physician_dimensions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="specialty_dimensions">
+        <PropertyRef Name="specialty_skey" />
+      </Principal>
+      <Dependent Role="physician_dimensions">
+        <PropertyRef Name="specialty_skey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__physician_i__npi__534D60F1">
+    <End Role="physician_dimensions" Type="Self.physician_dimensions" Multiplicity="0..1" />
+    <End Role="physician_insurance_bridge" Type="Self.physician_insurance_bridge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="physician_dimensions">
+        <PropertyRef Name="npi" />
+      </Principal>
+      <Dependent Role="physician_insurance_bridge">
+        <PropertyRef Name="npi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__procedure__facil__5070F446">
+    <End Role="facility_dimensions" Type="Self.facility_dimensions" Multiplicity="0..1" />
+    <End Role="procedure_facility_bridge" Type="Self.procedure_facility_bridge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="facility_dimensions">
+        <PropertyRef Name="facility_skey" />
+      </Principal>
+      <Dependent Role="procedure_facility_bridge">
+        <PropertyRef Name="facility_skey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__procedure__patie__52593CB8">
+    <End Role="patient_dimensions" Type="Self.patient_dimensions" Multiplicity="0..1" />
+    <End Role="procedure_facility_bridge" Type="Self.procedure_facility_bridge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="patient_dimensions">
+        <PropertyRef Name="patient_skey" />
+      </Principal>
+      <Dependent Role="procedure_facility_bridge">
+        <PropertyRef Name="patient_skey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__procedure__proce__4BAC3F29">
+    <End Role="procedure_base" Type="Self.procedure_base" Multiplicity="1" />
+    <End Role="procedure_code_dimensions" Type="Self.procedure_code_dimensions" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="procedure_base">
+        <PropertyRef Name="procedure_code" />
+      </Principal>
+      <Dependent Role="procedure_code_dimensions">
+        <PropertyRef Name="procedure_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__procedure__proce__5165187F">
+    <End Role="procedure_code_dimensions" Type="Self.procedure_code_dimensions" Multiplicity="0..1" />
+    <End Role="procedure_facility_bridge" Type="Self.procedure_facility_bridge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="procedure_code_dimensions">
+        <PropertyRef Name="procedure_code" />
+      </Principal>
+      <Dependent Role="procedure_facility_bridge">
+        <PropertyRef Name="procedure_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BeasleySemesterProjectModelStoreContainer">
+    <EntitySet Name="facility_dimensions" EntityType="Self.facility_dimensions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="facility_physician_procedures_bridge" EntityType="Self.facility_physician_procedures_bridge" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="facility_type_dimensions" EntityType="Self.facility_type_dimensions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="insurance_dimensions" EntityType="Self.insurance_dimensions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="patient_dimensions" EntityType="Self.patient_dimensions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="physician_dimensions" EntityType="Self.physician_dimensions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="physician_insurance_bridge" EntityType="Self.physician_insurance_bridge" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="procedure_base" EntityType="Self.procedure_base" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="procedure_code_dimensions" EntityType="Self.procedure_code_dimensions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="procedure_facility_bridge" EntityType="Self.procedure_facility_bridge" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="specialty_dimensions" EntityType="Self.specialty_dimensions" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__facility___facil__4AB81AF0" Association="Self.FK__facility___facil__4AB81AF0">
+      <End Role="facility_type_dimensions" EntitySet="facility_type_dimensions" />
+      <End Role="facility_dimensions" EntitySet="facility_dimensions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__facility___facil__4D94879B" Association="Self.FK__facility___facil__4D94879B">
+      <End Role="facility_dimensions" EntitySet="facility_dimensions" />
+      <End Role="facility_physician_procedures_bridge" EntitySet="facility_physician_procedures_bridge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__facility___proce__4F7CD00D" Association="Self.FK__facility___proce__4F7CD00D">
+      <End Role="procedure_base" EntitySet="procedure_base" />
+      <End Role="facility_physician_procedures_bridge" EntitySet="facility_physician_procedures_bridge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__facility_ph__npi__4E88ABD4" Association="Self.FK__facility_ph__npi__4E88ABD4">
+      <End Role="physician_dimensions" EntitySet="physician_dimensions" />
+      <End Role="facility_physician_procedures_bridge" EntitySet="facility_physician_procedures_bridge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__physician__insur__5441852A" Association="Self.FK__physician__insur__5441852A">
+      <End Role="insurance_dimensions" EntitySet="insurance_dimensions" />
+      <End Role="physician_insurance_bridge" EntitySet="physician_insurance_bridge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__physician__speci__4CA06362" Association="Self.FK__physician__speci__4CA06362">
+      <End Role="specialty_dimensions" EntitySet="specialty_dimensions" />
+      <End Role="physician_dimensions" EntitySet="physician_dimensions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__physician_i__npi__534D60F1" Association="Self.FK__physician_i__npi__534D60F1">
+      <End Role="physician_dimensions" EntitySet="physician_dimensions" />
+      <End Role="physician_insurance_bridge" EntitySet="physician_insurance_bridge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__procedure__facil__5070F446" Association="Self.FK__procedure__facil__5070F446">
+      <End Role="facility_dimensions" EntitySet="facility_dimensions" />
+      <End Role="procedure_facility_bridge" EntitySet="procedure_facility_bridge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__procedure__patie__52593CB8" Association="Self.FK__procedure__patie__52593CB8">
+      <End Role="patient_dimensions" EntitySet="patient_dimensions" />
+      <End Role="procedure_facility_bridge" EntitySet="procedure_facility_bridge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__procedure__proce__4BAC3F29" Association="Self.FK__procedure__proce__4BAC3F29">
+      <End Role="procedure_base" EntitySet="procedure_base" />
+      <End Role="procedure_code_dimensions" EntitySet="procedure_code_dimensions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__procedure__proce__5165187F" Association="Self.FK__procedure__proce__5165187F">
+      <End Role="procedure_code_dimensions" EntitySet="procedure_code_dimensions" />
+      <End Role="procedure_facility_bridge" EntitySet="procedure_facility_bridge" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -2,29 +2,29 @@
   <span>Filter Search</span>
   <mat-divider [inset]="true"></mat-divider>
   Facility Type
-  <mat-select (change)="mat-selectFacility()" [(ngModel)]="facilityTypemat-selectModel">
-    <option *ngFor="let f of facType">{{f.FacilityType}}</option>
+  <mat-select (change)="selectFacility()" [(ngModel)]="facilityTypeSelectModel">
+    <mat-option *ngFor="let f of getFacilityTypes()" [value]="f.FacilityType">{{f.FacilityType}}</mat-option>
   </mat-select>
   <br />
   <mat-divider [inset]="true"></mat-divider>
   Insurance
-  <mat-select (change)="mat-selectInsurance()" ng-model="mat-selectedInsurance" [(ngModel)]="insurancemat-selectModel">
-    <option *ngFor="let i of ins">{{i.InsuranceName}}</option>
+  <mat-select (change)="selectInsurance()" ng-model="selectedInsurance" [(ngModel)]="insuranceSelectModel">
+    <mat-option *ngFor="let i of getInsuranceTypes()" [value]="i.InsuranceName">{{i.InsuranceName}}</mat-option>
   </mat-select>
   <br />
   <mat-divider [inset]="true"></mat-divider>
   Procedure
-  <mat-select (change)="mat-selectProcedure()" ng-model="mat-selectedProcedure" [(ngModel)]="proceduremat-selectModel">
-    <option *ngFor="let p of proc">{{p.Description}}</option>
+  <mat-select (change)="selectProcedure()" ng-model="selectedProcedure" [(ngModel)]="procedureSelectModel">
+    <mat-option *ngFor="let p of getProcedureTypes()" [value]="p.Description">{{p.Description}}</mat-option>
   </mat-select>
   <br />
   <mat-divider [inset]="true"></mat-divider>
   Specialty
-  <mat-select (change)="mat-selectSpecialty()" ng-model="mat-selectedSpecialty" [(ngModel)]="specialtymat-selectModel">
-    <option *ngFor="let s of spec">{{s.Description}}</option>
+  <mat-select (change)="selectSpecialty()" ng-model="selectedSpecialty" [(ngModel)]="specialtySelectModel">
+    <mat-option *ngFor="let s of getSpecialtyTypes()" [value]="s.Description">{{s.Description}}</mat-option>
   </mat-select>
-  <br *ngIf="isSpecmat-selected" />
-  <mat-select *ngIf="isSpecmat-selected" ng-model="mat-selectedPhysician">
+  <br *ngIf="isSpecselected" />
+  <mat-select *ngIf="isSpecselected" ng-model="selectedPhysician">
     <option *ngFor="let ph of phys">Dr. {{ph.LastName}}, {{ph.FirstName}}</option>
   </mat-select>
   <br />

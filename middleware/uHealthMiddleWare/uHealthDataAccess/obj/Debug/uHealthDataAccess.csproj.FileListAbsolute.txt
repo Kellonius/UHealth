@@ -1,0 +1,24 @@
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\bin\Debug\uHealthDataAccess.dll.config
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\bin\Debug\uHealthDataAccess.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\bin\Debug\uHealthDataAccess.pdb
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.csprojAssemblyReference.cache
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.csproj.CopyComplete
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.dll
+C:\Users\rbeasley\source\repos\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.pdb
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\bin\Debug\uHealthDataAccess.dll.config
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\bin\Debug\uHealthDataAccess.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\bin\Debug\uHealthDataAccess.pdb
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.csprojAssemblyReference.cache
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.csproj.CopyComplete
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthDataAccess\obj\Debug\uHealthDataAccess.pdb

@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Physician } from '../Models/physician';
+import { Specialty } from '../Models/specialty';
+import { ApplicationService } from './app-service';
 
 @Injectable()
 export class PhysiciansService {
 
+    specialtyTypeList: Specialty[] = [];
     physicians: Physician[] = [{
         npi: 1,
         FirstName: "John",
@@ -60,7 +63,11 @@ export class PhysiciansService {
     }
 ]
     
-    constructor() {
+    constructor(private appService: ApplicationService) {
 
+    }
+
+    getSpecialtyTypes() {
+        this.appService.getSpecialtyTypes().subscribe(x => this.specialtyTypeList = x);
     }
 }

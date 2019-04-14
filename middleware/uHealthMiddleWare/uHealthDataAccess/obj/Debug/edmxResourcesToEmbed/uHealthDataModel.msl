@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BeasleySemesterProjectModelStoreContainer" CdmEntityContainer="uHealthEntities">
+    <EntitySetMapping Name="facility_dimensions">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.facility_dimensions">
+        <MappingFragment StoreEntitySet="facility_dimensions">
+          <ScalarProperty Name="facility_skey" ColumnName="facility_skey" />
+          <ScalarProperty Name="facility_name" ColumnName="facility_name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="zip" ColumnName="zip" />
+          <ScalarProperty Name="county" ColumnName="county" />
+          <ScalarProperty Name="facility_type_skey" ColumnName="facility_type_skey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="facility_physician_procedures_bridge">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.facility_physician_procedures_bridge">
+        <MappingFragment StoreEntitySet="facility_physician_procedures_bridge">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="facility_skey" ColumnName="facility_skey" />
+          <ScalarProperty Name="npi" ColumnName="npi" />
+          <ScalarProperty Name="procedure_code" ColumnName="procedure_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="facility_type_dimensions">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.facility_type_dimensions">
+        <MappingFragment StoreEntitySet="facility_type_dimensions">
+          <ScalarProperty Name="facility_type_skey" ColumnName="facility_type_skey" />
+          <ScalarProperty Name="facility_type" ColumnName="facility_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="insurance_dimensions">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.insurance_dimensions">
+        <MappingFragment StoreEntitySet="insurance_dimensions">
+          <ScalarProperty Name="insurance_skey" ColumnName="insurance_skey" />
+          <ScalarProperty Name="insurance_type" ColumnName="insurance_type" />
+          <ScalarProperty Name="insurance_name" ColumnName="insurance_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patient_dimensions">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.patient_dimensions">
+        <MappingFragment StoreEntitySet="patient_dimensions">
+          <ScalarProperty Name="patient_skey" ColumnName="patient_skey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="physician_dimensions">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.physician_dimensions">
+        <MappingFragment StoreEntitySet="physician_dimensions">
+          <ScalarProperty Name="npi" ColumnName="npi" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="specialty_skey" ColumnName="specialty_skey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="physician_insurance_bridge">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.physician_insurance_bridge">
+        <MappingFragment StoreEntitySet="physician_insurance_bridge">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="npi" ColumnName="npi" />
+          <ScalarProperty Name="insurance_skey" ColumnName="insurance_skey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procedure_base">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.procedure_base">
+        <MappingFragment StoreEntitySet="procedure_base">
+          <ScalarProperty Name="procedure_code" ColumnName="procedure_code" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="length_of_stay" ColumnName="length_of_stay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procedure_code_dimensions">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.procedure_code_dimensions">
+        <MappingFragment StoreEntitySet="procedure_code_dimensions">
+          <ScalarProperty Name="procedure_code" ColumnName="procedure_code" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procedure_facility_bridge">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.procedure_facility_bridge">
+        <MappingFragment StoreEntitySet="procedure_facility_bridge">
+          <ScalarProperty Name="procedure_skey" ColumnName="procedure_skey" />
+          <ScalarProperty Name="procedure_code" ColumnName="procedure_code" />
+          <ScalarProperty Name="patient_skey" ColumnName="patient_skey" />
+          <ScalarProperty Name="facility_skey" ColumnName="facility_skey" />
+          <ScalarProperty Name="npi" ColumnName="npi" />
+          <ScalarProperty Name="procedure_date" ColumnName="procedure_date" />
+          <ScalarProperty Name="total_cost" ColumnName="total_cost" />
+          <ScalarProperty Name="length_of_stay" ColumnName="length_of_stay" />
+          <ScalarProperty Name="expired" ColumnName="expired" />
+          <ScalarProperty Name="major_complications" ColumnName="major_complications" />
+          <ScalarProperty Name="minor_complications" ColumnName="minor_complications" />
+          <ScalarProperty Name="readmit" ColumnName="readmit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="specialty_dimensions">
+      <EntityTypeMapping TypeName="BeasleySemesterProjectModel.specialty_dimensions">
+        <MappingFragment StoreEntitySet="specialty_dimensions">
+          <ScalarProperty Name="specialty_skey" ColumnName="specialty_skey" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

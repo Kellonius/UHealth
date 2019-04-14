@@ -21,6 +21,11 @@ import { FacilityService } from './Services/facility.service';
 import { SharedService } from './Services/shared.service';
 import { ProcedureStatisticsService } from './Services/procedure-statistics.service';
 import { PhysiciansService } from './Services/physician.service';
+import { ComparisonComponent } from './parent-pages/comparison-component/comparison-component.component';
+import { FacilityTypesService } from './Services/facility-types.service';
+import { ApplicationService } from './Services/app-service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { InsuranceService } from './Services/insurance.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,8 @@ import { PhysiciansService } from './Services/physician.service';
     MapComponent,
     FilterComponentComponent,
     FacilityListComponentComponent,
-    DetailsComponent
+    DetailsComponent,
+    ComparisonComponent
   ],
   imports: [
     BrowserModule,
@@ -47,12 +53,16 @@ import { PhysiciansService } from './Services/physician.service';
     MatListModule,
     MatListModule,
     MatTooltipModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBwsqgVlNs5AFdWu-qACJX1GTO6hawhAFw'
     }),
   ],
   providers: [
+    ApplicationService,
     FacilityService,
+    FacilityTypesService,
+    InsuranceService,
     LocationService,
     PhysiciansService,
     ProcedureStatisticsService,

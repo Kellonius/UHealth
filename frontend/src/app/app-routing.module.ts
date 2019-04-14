@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './parent-pages/home-component/home-component.component';
 import { DetailsComponent } from './parent-pages/details-component/details-component.component';
+import { ComparisonComponent } from './parent-pages/comparison-component/comparison-component.component';
 
 const routes: Routes = [{
   path: 'home',
@@ -16,6 +17,13 @@ const routes: Routes = [{
   component: DetailsComponent,
   data: {
     breadcrumb: "Facility Details"
+  }
+},
+{
+  path: 'compare',
+  component: ComparisonComponent,
+  data: {
+    breadcrumb: "Compare Facilities"
   }
 },
 ];

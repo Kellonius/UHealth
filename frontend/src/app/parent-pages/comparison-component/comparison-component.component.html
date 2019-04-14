@@ -1,0 +1,28 @@
+<div class="comparison-component__container">
+  <mat-card class="comparison-component__facet-container">
+    <ul class="collection with-header" style="width:100%; height:90%;">
+      <li class="collection-header">
+        <h4 class="center-align">Compare By</h4>
+      </li>
+      <li *ngFor="let type of comparisonTypes; let i = index" class="collection-item left-align">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>{{type}}</span>
+              </label>
+            </p>
+      </li>
+    </ul>
+  </mat-card>
+  <mat-card class="comparison-component__table-container">
+    <table>
+      <thead>
+        <tr>
+          <th *ngFor="let facility of facilities">
+            {{facility.FacilityName}}
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </mat-card>
+</div>

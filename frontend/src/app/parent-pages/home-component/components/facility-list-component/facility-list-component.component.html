@@ -15,6 +15,6 @@
         </li>
       </ul>
       <a class="waves-effect waves-light btn facility-list__compare-button"
-        [ngClass]="{'disabled': getSelectCount()}">Compare</a>
+        [ngClass]="{'disabled': getSelectCount()}" (click)="navigateComparison()">Compare</a>
     </div>
   </mat-card>
