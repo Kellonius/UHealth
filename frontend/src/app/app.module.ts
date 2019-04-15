@@ -26,6 +26,8 @@ import { FacilityTypesService } from './Services/facility-types.service';
 import { ApplicationService } from './Services/app-service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { InsuranceService } from './Services/insurance.service';
+import { GeocodeService } from './Services/geocode-service';
+import { GoogleMapsClient } from '@google/maps';
 
 @NgModule({
   declarations: [
@@ -62,6 +64,7 @@ import { InsuranceService } from './Services/insurance.service';
     ApplicationService,
     FacilityService,
     FacilityTypesService,
+    GeocodeService,
     InsuranceService,
     LocationService,
     PhysiciansService,

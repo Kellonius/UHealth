@@ -271,5 +271,39 @@ namespace uHealthSearchService.Controllers
                 return null;
             }
         }
+
+        [Route("GetFacilitiesByZipcode")]
+        [HttpGet]
+        public List<FacilityModel> GetFacilitiesByZipcode(string zip)
+        {
+            try
+            {
+                using (var context = new uHealthEntities())
+                {
+                    var fl = context.facility_dimensions.Where(x => x.zip == zip).ToList();
+                    var facilityList = new List<FacilityModel>();
+                    foreach (var f in fl)
+                    {
+                        facilityList.Add(new FacilityModel()
+                        {
+                            FacilityKey = f.facility_skey,
+                            FacilityName = f.facility_name,
+                            Address = f.address,
+                            City = f.city,
+                            State = f.state,
+                            Zipcode = f.zip,
+                            TypeSkey = f.facility_type_skey,
+                            County = f.county
+                        });
+                    }
+                    return facilityList;
+                }
+            }
+
+            catch (NullReferenceException)
+            {
+                return null;
+            }
+        }
     }
 }

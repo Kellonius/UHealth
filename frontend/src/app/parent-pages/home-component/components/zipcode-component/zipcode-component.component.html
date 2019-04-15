@@ -1,7 +1,7 @@
   <form>
     <mat-card>
       <p>Welcome to uHealth! Enter your zipcode to begin your search.</p>
-        <input style="width:33%" (keyup)="onKey($event)" matInput placeholder="Please enter your zipcode" value="">
-      <a class="waves-effect waves-light btn"><i class="material-icons">search</i></a>     
+        <input style="width:33%" (keyup)="onKey($event)" matInput placeholder="Please enter your zipcode">
+      <a class="waves-effect waves-light btn" (click)="getFacilities()"><i class="material-icons">search</i></a>     
     </mat-card>
   </form>

@@ -16,7 +16,7 @@ export class LocationService{
     }
 
     createMarkers(facilities: Facility[]) {
-        this.markers = [];
+        this.markers = []; 
         let index = 0
         facilities.forEach(x => {
             this.markers.push({
@@ -28,6 +28,20 @@ export class LocationService{
             })
             index +=1;
         })
+    }
+
+    addMarker(x: Facility) {
+        this.markers.push({
+            lat: x.Latitude,
+            lng: x.Longitude,
+            label: this.sharedService.getLetter(this.markers.length),
+            draggable: false,
+            info: x.FacilityName + ", Hospital"
+        })
+    }
+
+    clearMarkers(){
+        this.markers = [];
     }
 
 }
