@@ -17,6 +17,7 @@
 a {
   font-size: 16px;
   color: #FF4E00 !important;
+  margin: 0 !important;
 
   &:hover {
     cursor: pointer;
@@ -31,4 +32,20 @@ i {
 li {
   line-height: 20px;
   vertical-align: middle;
+}
+
+.facility-list__item-name-link {
+  font-size: 16px;
+  color: #FF4E00 !important;
+  margin: 0 !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.facility-list__chip {
+  margin-top: 9px;
+  background-color: #7F5EBA !important;
+  color: white;
 }

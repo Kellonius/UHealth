@@ -28,6 +28,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { InsuranceService } from './Services/insurance.service';
 import { GeocodeService } from './Services/geocode-service';
 import { GoogleMapsClient } from '@google/maps';
+import { FilterService } from './Services/filter-services';
+import { BreadCrumbService } from './Services/breadcrumb.service';
+import { DialogComponent } from './parent-pages/home-component/components/dialog-component/dialog-component.component';
 
 @NgModule({
   declarations: [
@@ -39,13 +42,16 @@ import { GoogleMapsClient } from '@google/maps';
     FilterComponentComponent,
     FacilityListComponentComponent,
     DetailsComponent,
-    ComparisonComponent
+    ComparisonComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    MatExpansionModule,
+    MatDialogModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
@@ -62,8 +68,10 @@ import { GoogleMapsClient } from '@google/maps';
   ],
   providers: [
     ApplicationService,
+    BreadCrumbService,
     FacilityService,
     FacilityTypesService,
+    FilterService,
     GeocodeService,
     InsuranceService,
     LocationService,
@@ -71,6 +79,7 @@ import { GoogleMapsClient } from '@google/maps';
     ProcedureStatisticsService,
     SharedService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogComponent]
 })
 export class AppModule { }

@@ -17,6 +17,48 @@
     margin: 10px 10px 10px 0;
 }
 
+.comparison-component__table-container-flex {
+    width: 100%;
+    height:60%;
+    margin: 10px 10px 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 50%;
+}
+
+.comparison-component__table {
+    width: 33%;
+    height:100%;
+    overflow-y: auto;
+}
+
 span {
     color:#01ADAB;
 }
+
+tbody {
+    display: block;
+    height: 70%;
+    overflow: auto;
+  }
+  
+  thead,
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  thead {
+    width: calc(100% - 1em)
+  }
+  
+  table {
+    width: 100%;
+    height:100%;
+  }
+  
+  mat-card {
+    width: 99%;
+    margin: 10px 10px 0 10px;
+  }

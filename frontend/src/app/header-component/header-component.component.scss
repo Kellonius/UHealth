@@ -10,3 +10,13 @@
 nav {
     max-height: 64px;
 }
+
+a{
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.navbar__breadcrumbs {
+    padding-right: 30px;
+}

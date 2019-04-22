@@ -1,0 +1,62 @@
+<a class="btn-floating waves-effect waves-light right" (click)="onNoClick()"><i class="material-icons">close</i></a>
+<h2 mat-dialog-title>{{data.facility.FacilityName}}</h2>
+<!-- <mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Location
+      </mat-panel-title>
+      <mat-panel-description>
+        Information about your facility
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div><span class="details-component__label-header">Address: </span> <span>{{data.facility.Address}}</span></div>
+    <div><span class="details-component__label-header">City: </span> <span>{{data.facility.City}}</span>
+      <span class="details-component__label-header"> State: </span> <span>{{data.facility.State}}</span>
+      <span class="details-component__label-header"> County: </span> <span>{{data.facility.County}}</span>
+      <span class="details-component__label-header"> Zip Code: </span> <span>{{data.facility.Zipcode}}</span></div>
+  </mat-expansion-panel>
+</mat-accordion> -->
+
+<mat-card>
+  <h6>Information About Your Facility</h6>
+  <div><span class="details-component__label-header">Address: </span> <span>{{data.facility.Address}}</span></div>
+  <div><span class="details-component__label-header">City: </span> <span>{{data.facility.City}}</span>
+    <span class="details-component__label-header"> State: </span> <span>{{data.facility.State}}</span>
+    <span class="details-component__label-header"> County: </span> <span>{{data.facility.County}}</span>
+    <span class="details-component__label-header"> Zip Code: </span> <span>{{data.facility.Zipcode}}</span></div>
+</mat-card>
+
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Doctors
+      </mat-panel-title>
+      <mat-panel-description>
+        Information about your doctors
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p *ngFor="let p of getPhysicians()">Dr.{{p.LastName}}, {{p.FirstName}} <span class="right">{{p.Specialty}}</span>
+    </p>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Procedures
+      </mat-panel-title>
+      <mat-panel-description>
+        Available Procedures
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p *ngFor="let proc of getProcedures()">{{proc.Description}}</p>
+  </mat-expansion-panel>
+</mat-accordion>
+
+
+<div mat-dialog-actions>
+
+</div>

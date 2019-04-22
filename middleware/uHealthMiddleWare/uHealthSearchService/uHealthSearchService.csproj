@@ -170,6 +170,7 @@
     <Compile Include="Models\FacilityDetails.cs" />
     <Compile Include="Models\FacilityModel.cs" />
     <Compile Include="Models\FacilityTypesModel.cs" />
+    <Compile Include="Models\FilterModels\FacilityTypesFilter.cs" />
     <Compile Include="Models\InsuranceTypesModel.cs" />
     <Compile Include="Models\PhysicianModel.cs" />
     <Compile Include="Models\ProcedureStatisticsModel.cs" />

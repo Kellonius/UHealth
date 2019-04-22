@@ -7,69 +7,57 @@ import { ApplicationService } from './app-service';
 export class ProcedureStatisticsService {
 
     public procedureTypesList: Procedure[] = [];
+    public procedureTypesListFiltered: Procedure[] = [];
 
-    statistics: ProcedureStatistics[] = [{
-        ProcedureDescr: "Heart Transplant",
-        AvgTotalCost: 14000,
-        AvgLos: 7,
-        MortalityRate: 50,
-        MajorComplicationRate: 50,
-        MinorComplicationRate: 10,
-        ReadmissionRate: 25
-    },
-    {
-        ProcedureDescr: "Heart Bypass",
-        AvgTotalCost: 9000,
-        AvgLos: 7,
-        MortalityRate: 50,
-        MajorComplicationRate: 50,
-        MinorComplicationRate: 10,
-        ReadmissionRate: 25
-    },
-    {
-        ProcedureDescr: "Colonoscopy",
-        AvgTotalCost: 2328,
-        AvgLos: 1,
-        MortalityRate: 0,
-        MajorComplicationRate: 0,
-        MinorComplicationRate: 10,
-        ReadmissionRate: 0
-    },
-    {
-        ProcedureDescr: "Heart Transplant",
-        AvgTotalCost: 14000,
-        AvgLos: 7,
-        MortalityRate: 50,
-        MajorComplicationRate: 50,
-        MinorComplicationRate: 10,
-        ReadmissionRate: 25
-    },
-    {
-        ProcedureDescr: "Heart Bypass",
-        AvgTotalCost: 9000,
-        AvgLos: 7,
-        MortalityRate: 50,
-        MajorComplicationRate: 50,
-        MinorComplicationRate: 10,
-        ReadmissionRate: 25
-    },
-    {
-        ProcedureDescr: "Colonoscopy",
-        AvgTotalCost: 2328,
-        AvgLos: 1,
-        MortalityRate: 0,
-        MajorComplicationRate: 0,
-        MinorComplicationRate: 10,
-        ReadmissionRate: 0
-    }
-]
+    statistics: ProcedureStatistics[] = []
 
     constructor(private appService: ApplicationService) {
 
     }
 
+    clearTypes() {
+        this.procedureTypesListFiltered = [];
+    }
+
+    clearTypesForFilter(procedure: Procedure) {
+        this.procedureTypesListFiltered = [];
+        if (procedure) {
+            this.procedureTypesListFiltered.push(procedure);
+        }
+    }
+
     getProcedureTypes() {
         this.appService.getProcedureTypes().subscribe(x => this.procedureTypesList = x);
+    }
+
+    getProcedureTypesByZip(zip: string) {
+        this.appService.getProceduresByZipCode(zip).subscribe(x => this.procedureTypesListFiltered = x)
+    }
+
+    getProcedureTypesByKey(key: number) {
+        this.procedureTypesListFiltered = [];
+        this.appService.getProceduresByKey(key).subscribe(x => {
+            x.forEach(y => {
+                this.procedureTypesListFiltered.push(y);
+            });
+        });
+    }
+
+    getFacilityTypesForFilter(procedures: Procedure[]) {
+        procedures.forEach(x => {
+            this.procedureTypesList.forEach(y => {
+                if (x.Code === y.Code) {
+                    let p: Procedure = y;
+                    if (!this.procedureTypesList.includes(p)) {
+                        this.procedureTypesListFiltered.push(y);
+                    }
+                };
+            });
+        });
+    }
+
+    getProcedureStatisticsByKey(key: number) {
+        this.appService.getProcedureStatisticsByKey(key).subscribe(x => this.statistics = x)
     }
 
 }

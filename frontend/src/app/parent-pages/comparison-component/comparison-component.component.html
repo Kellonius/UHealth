@@ -1,28 +1,124 @@
 <div class="comparison-component__container">
   <mat-card class="comparison-component__facet-container">
-    <ul class="collection with-header" style="width:100%; height:90%;">
+    <ul class="collection with-header" style="width:100%; height:50%;">
+      <li class="collection-header">
+        <h4 class="center-align">Select Facilities</h4>
+      </li>
+      <li *ngFor="let f of facilities; let i = index">
+        <p class="collection-item left-align">
+          <label>
+            <input (click)="onClick(f)" type="checkbox" />
+            <span>{{f.FacilityName}}</span>
+          </label>
+        </p>
+      </li>
+    </ul>
+    <ul *ngIf="selectedForComparison.length > 0" class="collection with-header" style="width:100%; height:50%;">
       <li class="collection-header">
         <h4 class="center-align">Compare By</h4>
       </li>
       <li *ngFor="let type of comparisonTypes; let i = index" class="collection-item left-align">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span>{{type}}</span>
-              </label>
-            </p>
+        <p>
+          <label>
+            <input (click)="selectType(type)" type="checkbox" />
+            <span>{{type}}</span>
+          </label>
+        </p>
       </li>
     </ul>
   </mat-card>
-  <mat-card class="comparison-component__table-container">
-    <table>
-      <thead>
-        <tr>
-          <th *ngFor="let facility of facilities">
-            {{facility.FacilityName}}
-          </th>
-        </tr>
-      </thead>
-    </table>
+  <mat-card *ngIf="selectedForComparison.length < 1 && !showInsuranceFilter && !showProceduresFilter && !showSpecialtyFilter" class="comparison-component__table-container">
+    <p>To begin, select a facility from the list.</p>
+    <p>Then, select a field to perform a comparison.</p>
   </mat-card>
+  <div style="display:flex; flex-direction: column; overflow-y:auto !important;">
+    <mat-card *ngIf="selectedForComparison.length > 0 && showInsuranceFilter" class="comparison-component__table-container-flex">
+      <table *ngFor="let facility of selectedForComparison; let i = index" class="comparison-component__table striped">
+        <thead>
+          <tr>
+            <th>
+              {{facility.FacilityName}}
+            </th>
+          </tr>
+        </thead>
+        <thead *ngIf="showInsuranceFilter">
+          <tr>
+            <th>
+              Insurance Name
+            </th>
+            <!-- <th>
+                  Insurance Type
+                </th> -->
+            <th>
+              Accepted?
+            </th>
+          </tr>
+        </thead>
+        <tbody *ngIf="showInsuranceFilter">
+          <tr *ngFor="let i of insurances">
+            <td>{{i}}</td>
+            <td>{{compare(i, facility, 2)}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-card>
+    <mat-card *ngIf="selectedForComparison.length > 0 && showProceduresFilter" class="comparison-component__table-container-flex">
+      <table *ngFor="let facility of selectedForComparison; let i = index" class="comparison-component__table striped">
+        <thead>
+          <tr>
+            <th>
+              {{facility.FacilityName}}
+            </th>
+          </tr>
+        </thead>
+        <thead *ngIf="showProceduresFilter">
+          <tr>
+            <th>
+              Procedure Name
+            </th>
+            <th>
+              Avg Cost
+            </th>
+            <th>
+              Avg Stay
+            </th>
+          </tr>
+        </thead>
+        <tbody *ngIf="showProceduresFilter">
+          <tr *ngFor="let p of procedures">
+            <td>{{p}}</td>
+            <td>${{compare(p, facility, 0)}}</td>
+            <td>{{compare(p, facility, 1)}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-card>
+    <mat-card *ngIf="selectedForComparison.length > 0 && showSpecialtyFilter" class="comparison-component__table-container-flex">
+        <table *ngFor="let facility of selectedForComparison; let i = index" class="comparison-component__table striped">
+          <thead>
+            <tr>
+              <th>
+                {{facility.FacilityName}}
+              </th>
+            </tr>
+          </thead>
+          <thead *ngIf="showSpecialtyFilter">
+            <tr>
+              <th>
+                Specialty
+              </th>
+              <th>
+                Offered?
+              </th>
+            </tr>
+          </thead>
+          <tbody *ngIf="showSpecialtyFilter">
+            <tr *ngFor="let s of specialties">
+              <td>{{s}}</td>
+              <td>{{compare(s, facility, 3)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </mat-card>
+  </div>
 </div>

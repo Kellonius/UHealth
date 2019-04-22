@@ -1,5 +1,7 @@
 export class Insurance {
-    public InsurancesSKey: number;
+    public facilityKey?: number;
+    public InsuranceSKey: number;
     public InsuranceType: string;
     public InsuranceName: string;
 }
+

@@ -1,5 +1,5 @@
 <div *ngIf="showError">No facility exists with the selected key: {{routeParams.FacilitySkey}}</div>
-<div class="details-component__container" *ngIf="!showError">
+<div class="details-component__container" *ngIf="!showError && !isLoading">
   <mat-card>
     <h4>General Information</h4>
     <div><span class="details-component__label-header">Facility Name: </span> <span>{{facility.FacilityName}}</span></div>
@@ -23,10 +23,10 @@
           <td>{{stat.ProcedureDescr}}</td>
           <td>{{stat.AvgTotalCost | currency}}</td>
           <td>{{stat.AvgLos}} Days</td>
-          <td>{{stat.MortalityRate}}%</td>
-          <td>{{stat.MajorComplicationRate}}%</td>
-          <td>{{stat.MinorComplicationRate}}%</td>
-          <td>{{stat.ReadmissionRate}}%</td>
+          <td>{{stat.MortalityRate * 100}}%</td>
+          <td>{{stat.MajorComplicationRate * 100}}%</td>
+          <td>{{stat.MinorComplicationRate * 100}}%</td>
+          <td>{{stat.ReadmissionRate * 100}}%</td>
         </tr>
       </tbody>
     </table>
