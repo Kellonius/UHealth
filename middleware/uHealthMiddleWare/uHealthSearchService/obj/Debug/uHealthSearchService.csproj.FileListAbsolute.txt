@@ -169,3 +169,6 @@ C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\
 C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.csproj.CopyComplete
 C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.dll
 C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\obj\Debug\uHealthSearchService.pdb
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Cors.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.Cors.dll
+C:\Users\rbeasley\Desktop\MS Work\Capstone\UHealth\middleware\uHealthMiddleWare\uHealthSearchService\bin\System.Web.Http.Cors.xml

@@ -4,12 +4,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using uHealthDataAccess;
 using uHealthSearchService.Models;
 using uHealthSearchService.Models.FilterModels;
 
 namespace uHealthSearchService.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [RoutePrefix("Facility")]
     public class FacilityController : ApiController
     {

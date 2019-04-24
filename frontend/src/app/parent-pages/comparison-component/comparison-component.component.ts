@@ -8,6 +8,8 @@ import { BreadCrumbService } from 'src/app/Services/breadcrumb.service';
 import { FacilityDetails } from 'src/app/Models/facility-details';
 import { Insurance } from 'src/app/Models/insurance';
 import { Specialty } from 'src/app/Models/specialty';
+import { Chart } from 'chart.js';
+
 
 @Component({
   selector: 'app-comparison-component',
@@ -39,6 +41,7 @@ export class ComparisonComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   onClick(facility: Facility) {
@@ -82,6 +85,7 @@ export class ComparisonComponent implements OnInit {
         })
       })
 
+      // this.procedureChart(this.selectedForComparison)
     } else {
 
       const index = this.selectedForComparison.indexOf(facility, 0);
@@ -90,6 +94,18 @@ export class ComparisonComponent implements OnInit {
       }
 
       this.allFacilityDetails = this.allFacilityDetails.filter(fd => fd.FacilitySKey !== facility.FacilityKey);
+    }
+  }
+
+  showInstructions() {
+    if (this.selectedForComparison.length < 1) {
+      return true;
+    } else if (this.showInsuranceFilter === true) {
+      return false;
+    } else if (this.showProceduresFilter === true) {
+      return false;
+    } else if (this.showSpecialtyFilter === true) {
+      return false;
     }
   }
 
@@ -160,4 +176,45 @@ export class ComparisonComponent implements OnInit {
       return value;
     }
   }
+
+  // procedureChart(facilities: Facility[]) {
+  //   var ctx = document.getElementById('procedureBar');
+
+  //   var myBarChart = new Chart(ctx, {
+  //     type: 'bar',
+  //     data: {
+  //         labels: this.procedures,
+  //         datasets: [{
+  //             label: '',
+  //             data: [12, 19, 3, 5, 2, 3],
+  //             backgroundColor: [
+  //                 'rgba(255, 99, 132, 0.2)',
+  //                 'rgba(54, 162, 235, 0.2)',
+  //                 'rgba(255, 206, 86, 0.2)',
+  //                 'rgba(75, 192, 192, 0.2)',
+  //                 'rgba(153, 102, 255, 0.2)',
+  //                 'rgba(255, 159, 64, 0.2)'
+  //             ],
+  //             borderColor: [
+  //                 'rgba(255, 99, 132, 1)',
+  //                 'rgba(54, 162, 235, 1)',
+  //                 'rgba(255, 206, 86, 1)',
+  //                 'rgba(75, 192, 192, 1)',
+  //                 'rgba(153, 102, 255, 1)',
+  //                 'rgba(255, 159, 64, 1)'
+  //             ],
+  //             borderWidth: 1
+  //         }]
+  //     },
+  //     options: {
+  //         scales: {
+  //             yAxes: [{
+  //                 ticks: {
+  //                     beginAtZero: true
+  //                 }
+  //             }]
+  //         }
+  //     }
+  // });
+  // }
 }
